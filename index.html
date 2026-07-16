@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Felix Brillant | AI Cloud Data Engineer</title>
+  <title>Felix Brillant | AI Platform Engineer</title>
 
   <style>
     body {
@@ -175,6 +175,65 @@
     a {
       color: #38bdf8;
     }
+  
+    /* Premium two-column hero */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      align-items: center;
+      gap: 48px;
+      padding: 58px 0 38px;
+    }
+
+    .hero-content {
+      min-width: 0;
+    }
+
+    .hero-photo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-photo {
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+      object-position: center 18%;
+      border-radius: 24px;
+      border: 2px solid rgba(56, 189, 248, 0.65);
+      box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.35),
+        0 0 0 8px rgba(56, 189, 248, 0.06);
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-top: 38px;
+      }
+
+      .hero-photo-wrap {
+        grid-row: 1;
+        justify-content: flex-start;
+      }
+
+      .hero-photo {
+        width: 170px;
+        height: 170px;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .tagline {
+        font-size: 18px;
+      }
+    }
+
   </style>
 </head>
 
@@ -182,32 +241,42 @@
 <div class="container">
 
   <section class="hero">
-    <h1>Felix Brillant</h1>
+    <div class="hero-content">
+      <h1>Felix Brillant</h1>
 
-    <p class="tagline">
-      AI Cloud Data Engineer • Production AI Systems • Reliability Engineering
-    </p>
+      <p class="tagline">
+        AI Platform Engineer • Cloud Architecture • Decision Intelligence
+      </p>
 
-    <p class="hero-description">
-      I design production-oriented AI systems combining AWS cloud infrastructure,
-      retrieval-augmented generation (RAG), multi-agent orchestration,
-      evaluation pipelines, observability, and reliability engineering.
-    </p>
+      <p class="hero-description">
+        I design production AI platforms that transform fragmented enterprise data
+        into trusted operational decisions through cloud architecture,
+        data engineering, AI orchestration, validation, and observability.
+      </p>
 
-    <div class="buttons">
-      <a class="button" href="https://github.com/xavi092000" target="_blank">GitHub Portfolio</a>
-      <a class="button secondary" href="https://www.linkedin.com/in/felix-brillant-27b890113/" target="_blank">LinkedIn</a>
-      <a class="button secondary" href="Felix_Brillant_Executive_CV2026.pdf" target="_blank">Resume PDF</a>
+      <div class="buttons">
+        <a class="button" href="https://github.com/xavi092000" target="_blank" rel="noopener noreferrer">GitHub Portfolio</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/felix-brillant-27b890113/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="button secondary" href="Felix_Brillant_Executive_CV2026.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
+      </div>
+
+      <div class="skills" style="margin-top:20px;">
+        <div class="skill">AWS</div>
+        <div class="skill">RAG</div>
+        <div class="skill">Multi-Agent Systems</div>
+        <div class="skill">Event-Driven Architecture</div>
+        <div class="skill">Cloud Observability</div>
+        <div class="skill">AI Reliability</div>
+        <div class="skill">FinOps</div>
+      </div>
     </div>
 
-    <div class="skills" style="margin-top:20px;">
-      <div class="skill">AWS</div>
-      <div class="skill">RAG</div>
-      <div class="skill">Multi-Agent Systems</div>
-      <div class="skill">Event-Driven Architecture</div>
-      <div class="skill">Cloud Observability</div>
-      <div class="skill">AI Reliability</div>
-      <div class="skill">FinOps</div>
+    <div class="hero-photo-wrap">
+      <img
+        class="hero-photo"
+        src="assets/images/felix-brillant.jpg"
+        alt="Felix Brillant"
+      />
     </div>
   </section>
 
@@ -274,88 +343,92 @@
   </section>
 
   <section>
-    <h2>Production AI Systems</h2>
+    <h2>Production AI Platforms</h2>
 
     <div class="grid">
       <div class="card">
-        <h3>FlowPay Real-Time AI Platform</h3>
+        <h3>FlowPay — Market Risk Intelligence Platform</h3>
         <p>
-          Production-style real-time AI financial intelligence platform combining
-          streaming pipelines, multi-agent orchestration, RAG systems,
-          validation workflows, and AWS cloud architecture.
+          Production AI platform transforming real-time market events into trusted
+          decision intelligence through event-driven AWS architecture,
+          multi-agent orchestration, validation workflows, and reliability engineering.
         </p>
 
         <div class="skills">
           <div class="skill">Kinesis</div>
           <div class="skill">Lambda</div>
           <div class="skill">Step Functions</div>
-          <div class="skill">RAG</div>
+          <div class="skill">FastAPI</div>
           <div class="skill">Terraform</div>
           <div class="skill">CloudWatch</div>
         </div>
 
         <div class="buttons">
-          <a class="button" href="https://github.com/xavi092000/flowpay-real-time-ai-platform" target="_blank">
+          <a class="button" href="https://github.com/xavi092000/flowpay-real-time-ai-platform" target="_blank" rel="noopener noreferrer">
             View System Architecture
           </a>
         </div>
       </div>
 
       <div class="card">
-        <h3>AWS CFO FinOps RAG</h3>
+        <h3>CFO FinOps — Cloud Financial Intelligence Platform</h3>
         <p>
-          Cloud-native CFO FinOps analytics platform combining AWS Athena,
-          Power BI, retrieval-augmented generation, observability,
-          orchestration, and analytics engineering workflows.
+          Production cloud decision platform transforming AWS financial telemetry
+          into executive decision intelligence through analytics engineering,
+          grounded RAG, and explainable AI.
         </p>
 
         <div class="skills">
           <div class="skill">Athena</div>
+          <div class="skill">Glue</div>
           <div class="skill">Power BI</div>
           <div class="skill">RAG</div>
+          <div class="skill">dbt</div>
           <div class="skill">FinOps</div>
-          <div class="skill">Observability</div>
         </div>
 
         <div class="buttons">
-          <a class="button" href="https://github.com/xavi092000/aws-cfo-finops-rag" target="_blank">
+          <a class="button" href="https://github.com/xavi092000/aws-cfo-finops-rag" target="_blank" rel="noopener noreferrer">
             Explore Platform
           </a>
         </div>
       </div>
 
-
-
       <div class="card">
-  <h3>QuantLab — Quantitative Research Platform</h3>
+        <h3>QuantLab — Quantitative Research Platform</h3>
+        <p>
+          Production quantitative AI platform integrating market ingestion,
+          machine learning, strategy selection, portfolio construction,
+          risk management, trade execution, explainability, and continuous monitoring.
+        </p>
 
-  <p>
-    Production quantitative AI platform integrating market ingestion,
-    predictive models, strategy selection, portfolio construction,
-    risk management, execution, explainability, and continuous monitoring.
-  </p>
+        <div class="skills">
+          <div class="skill">Python</div>
+          <div class="skill">FastAPI</div>
+          <div class="skill">PostgreSQL</div>
+          <div class="skill">Docker</div>
+          <div class="skill">Portfolio Construction</div>
+          <div class="skill">Risk Management</div>
+        </div>
 
-  <div class="skills">
-    <div class="skill">Python</div>
-    <div class="skill">FastAPI</div>
-    <div class="skill">PostgreSQL</div>
-    <div class="skill">Docker</div>
-    <div class="skill">MLOps</div>
-    <div class="skill">Risk Management</div>
-  </div>
+        <div class="buttons">
+          <a class="button" href="https://github.com/xavi092000/QuantLab" target="_blank" rel="noopener noreferrer">
+            Explore QuantLab
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="buttons">
-    <a
-      class="button"
-      href="https://github.com/xavi092000/QuantLab"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Explore QuantLab
-    </a>
-  </div>
-</div>
+  <section>
+    <h2>Engineering Building Blocks</h2>
 
+    <p>
+      These focused projects demonstrate reusable data, retrieval, orchestration,
+      and analytics components that support the production AI platforms above.
+    </p>
+
+    <div class="grid">
       <div class="card">
         <h3>NYC Taxi Analytics Platform</h3>
         <p>
@@ -373,7 +446,7 @@
         </div>
 
         <div class="buttons">
-          <a class="button" href="https://github.com/xavi092000/nyc-taxi-analytics-platform" target="_blank">
+          <a class="button" href="https://github.com/xavi092000/nyc-taxi-analytics-platform" target="_blank" rel="noopener noreferrer">
             View Analytics Workflow
           </a>
         </div>
@@ -395,7 +468,7 @@
         </div>
 
         <div class="buttons">
-          <a class="button" href="https://github.com/xavi092000/modern-data-orchestration-pipelines" target="_blank">
+          <a class="button" href="https://github.com/xavi092000/modern-data-orchestration-pipelines" target="_blank" rel="noopener noreferrer">
             View Pipeline Design
           </a>
         </div>
@@ -405,8 +478,7 @@
         <h3>LLM RAG Engineering</h3>
         <p>
           Semantic retrieval and RAG experimentation project focused on
-          embeddings, document retrieval,
-          vector search, and AI pipeline prototyping.
+          embeddings, document retrieval, vector search, and AI pipeline prototyping.
         </p>
 
         <div class="skills">
@@ -417,7 +489,7 @@
         </div>
 
         <div class="buttons">
-          <a class="button" href="https://github.com/xavi092000/llm-rag-engineering" target="_blank">
+          <a class="button" href="https://github.com/xavi092000/llm-rag-engineering" target="_blank" rel="noopener noreferrer">
             View AI Workflow
           </a>
         </div>
@@ -427,8 +499,7 @@
         <h3>Semantic Vector Search Engine</h3>
         <p>
           Vector search experimentation project focused on embeddings,
-          similarity retrieval, vector databases,
-          and AI-powered search workflows.
+          similarity retrieval, vector databases, and AI-powered search workflows.
         </p>
 
         <div class="skills">
@@ -439,7 +510,7 @@
         </div>
 
         <div class="buttons">
-          <a class="button" href="https://github.com/xavi092000/vector-search-engine" target="_blank">
+          <a class="button" href="https://github.com/xavi092000/vector-search-engine" target="_blank" rel="noopener noreferrer">
             Explore Search Engine
           </a>
         </div>
@@ -452,24 +523,20 @@
 
     <div class="card">
       <p>
-        AI / Cloud Data Engineer focused on building production-style cloud and AI systems across AWS infrastructure,
-        analytics engineering, orchestration workflows,
-        retrieval-augmented generation (RAG),
-        and real-time intelligent pipelines.
+        AI Platform Engineer focused on designing production-grade AI platforms
+        that transform enterprise data into trusted operational decisions.
       </p>
 
       <p>
-        My work combines cloud architecture, data engineering,
-        AI engineering, validation frameworks,
-        observability, and executive analytics platforms designed
-        around production-oriented engineering practices.
+        My work combines cloud-native architecture, data engineering,
+        real-time processing, retrieval-augmented generation (RAG),
+        multi-agent orchestration, observability, and decision intelligence.
       </p>
 
       <p>
-        I specialize in AWS-native systems involving Athena,
-        Glue, Terraform, Step Functions,
-        Kinesis, Power BI, vector databases,
-        orchestration pipelines, and large language model (LLM) workflows.
+        I build reliable AI platforms on AWS using modern engineering practices,
+        with a strong emphasis on validation, scalability, automation,
+        and production readiness.
       </p>
     </div>
   </section>
@@ -478,20 +545,20 @@
     <h2>Core Expertise</h2>
 
     <div class="skills">
-      <div class="skill">AWS Cloud Architecture</div>
-      <div class="skill">AI Engineering</div>
-      <div class="skill">RAG Systems</div>
-      <div class="skill">Observability</div>
+      <div class="skill">AWS</div>
+      <div class="skill">AI Platform Engineering</div>
+      <div class="skill">Cloud Architecture</div>
+      <div class="skill">Decision Intelligence</div>
+      <div class="skill">Data Engineering</div>
       <div class="skill">Streaming Pipelines</div>
+      <div class="skill">Multi-Agent AI</div>
+      <div class="skill">RAG Systems</div>
+      <div class="skill">FastAPI</div>
       <div class="skill">Terraform</div>
-      <div class="skill">Prompt Engineering</div>
-      <div class="skill">AI Reliability</div>
+      <div class="skill">CloudWatch</div>
       <div class="skill">Analytics Engineering</div>
       <div class="skill">FinOps</div>
-      <div class="skill">CloudWatch</div>
-      <div class="skill">Athena</div>
-      <div class="skill">Power BI</div>
-      <div class="skill">Multi-Agent Workflows</div>
+      <div class="skill">Observability</div>
     </div>
   </section>
 
@@ -577,9 +644,9 @@
     </p>
 
     <p class="muted">
-      Portfolio focused on production AI systems,
-      cloud-native architecture, orchestration,
-      observability, AI reliability, and decision intelligence.
+      Portfolio focused on production AI platforms,
+      cloud-native architecture, data engineering,
+      observability, reliability, and decision intelligence.
     </p>
   </section>
 
